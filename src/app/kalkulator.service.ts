@@ -14,7 +14,7 @@ export class KalkulatorService {
   }
 
   zwieksz():number{
-      this.licznik ++
+      this.licznik++
       return this.licznik
   }
 

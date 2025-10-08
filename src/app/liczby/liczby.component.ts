@@ -11,7 +11,16 @@ import { KalkulatorService } from '../kalkulator.service';
 export class LiczbyComponent {
 
   suma = 0
-  constructor(kalkulator:KalkulatorService){
+
+  licznik = 0
+
+  constructor(private kalkulator:KalkulatorService){
   this.suma=kalkulator.dodaj(2,2,5,7)
+  this.licznik = kalkulator.getLicznik()
+  }
+
+  //metoda z komponentu uzywa metody serwisu
+  powieksz(){
+    this.licznik = this.kalkulator.zwieksz()
   }
 }
