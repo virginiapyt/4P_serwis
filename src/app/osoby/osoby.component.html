@@ -1,0 +1,8 @@
+<h2>Lista osób</h2>
+@for(czlowiek of ludzie; track 0){
+<div>
+ <h5>{{czlowiek.imie}} {{czlowiek.nazwisko}}</h5> 
+ <img [src]="czlowiek.zdjecie" width="200px">
+</div>
+
+}
